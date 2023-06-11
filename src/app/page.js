@@ -11,8 +11,6 @@ export default async function Home() {
     return (
 
         <>  
-        
-
             <div className="flex gap-4 justify-center mb-4">
                 <h1 className="text-5xl font-bold text-red-600">Poke <span className="text-gray-800">Next13</span></h1>
                 <Image src={'/images/pokeball.png'} width={50} height={50} alt="PokeNext13"/>

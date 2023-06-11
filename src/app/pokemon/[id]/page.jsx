@@ -1,8 +1,6 @@
 import getSinglePokemon from "@/app/lib/getSinglePokemon";
 import Image from "next/image";
 import styles from "@/app/styles/Pokemon.module.css"
-import { Suspense } from "react";
-import Loading from "@/app/loading";
 
 export default async function Pokemon({ params: { id } }) {
 	const pokemon = await getSinglePokemon({ id });
@@ -44,11 +42,9 @@ export default async function Pokemon({ params: { id } }) {
                                 <span key={index} className="bg-gray-600 rounded-full pr-4 pl-4">{item.ability.name}</span>
                             ))}
                         </div>
-                        
                     </div>
                 </div>
             </div>
-			
 		</div>
 	);
 }

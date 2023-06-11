@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import Head from "next/head";
 
 export const metadata = {
 	title: "PokeNext13",
