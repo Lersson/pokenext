@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Card({pokemon}) {
     return (
-        <div className="max-w-sm bg-gray-800 border border-green-500 rounded-md text-center flex flex-col shadow-md hover:scale-105">
+        <div className="max-w-sm dark:bg-gray-800 border border-green-500 rounded-md text-center flex flex-col shadow-md hover:scale-105">
             <div className="bg-green-600 rounded-t p-3">
                 #{pokemon.idImage}
             </div>
