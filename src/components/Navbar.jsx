@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
+import Login from "@/app/login/page";
 
 export default function Navbar() {
     return (
@@ -12,6 +13,8 @@ export default function Navbar() {
                 <h1>PokeNext13</h1>
             </div>
                 <ThemeSwitcher />
+            <div className="flex gap-4">
+
             <ul className="flex gap-4">
                 <li>
                     <Link href="/">
@@ -24,6 +27,10 @@ export default function Navbar() {
                     </Link>
                 </li>
             </ul>
+            <div>
+                <Login />
+            </div>
+            </div>
         </nav>
     )
 }
