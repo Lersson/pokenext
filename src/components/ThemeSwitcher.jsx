@@ -15,6 +15,10 @@ const ThemeSwitcher = () => {
         return null
     }
 
+    if(theme === 'system'){
+        setTheme('dark')
+    }
+
     function HandleTheme() {
         if(theme === 'dark'){
             setTheme('light')
